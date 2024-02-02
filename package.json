@@ -1,0 +1,14 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is my package",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Priyanka Gupta",
+  "license": "ISC"
+}
+
+
+//This file has been create with npm init. This file is basically a configuration of NPM
