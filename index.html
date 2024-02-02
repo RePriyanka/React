@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>React</title>
+</head>
+<body>
+    <h1>I am at the Top</h1> <!-- I am not replaced -->
+    <div id="root">
+        <h1>I am here</h1>  <!-- This will be replaced with below script code -->
+    </div>
+    <h1>I am at the Bottom</h1> <!-- I am not replaced -->
+    
+    <!--using javascript created hello world program-->
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello world";
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+    </script>
+
+    <!--using react create hello world program-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> 
+    <!--this is the core file of react-->
+    
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+    <!--This is the react library which is useful for DOM operation or this is react dom which 
+    we need to modify the DOM(doucment object model) -->
+
+    <!-- React does not only works on browser react also works on mobile phone with React Native -->
+
+    <script src="./App.js"></script>
+</body>
+</html>
